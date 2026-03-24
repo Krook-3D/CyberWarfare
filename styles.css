@@ -1,0 +1,91 @@
+/* === RESET ===
+   Removes default browser margin/padding and uses border-box sizing
+   so padding doesn't affect element width/height */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BODY ===
+   Sets the default font, and uses flexbox column layout
+   so the footer stays at the bottom of the page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+}
+
+/* === HEADER ===
+   Dark background banner at the top of the page */
+header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+/* Site title size inside the header */
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* === NAVIGATION ===
+   Slightly lighter dark bar below the header */
+nav {
+    background-color: #16213e;
+    padding: 0.75rem 2rem;
+}
+
+/* Displays nav links horizontally in a row */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Nav link default style: light grey, no underline */
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* Nav link hover: turns cyan/blue when hovered */
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+/* === MAIN CONTENT ===
+   flex: 1 makes this grow to fill available space,
+   pushing the footer to the bottom */
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+/* === SECTIONS ===
+   White cards with rounded corners and a subtle shadow */
+section {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Section heading colour matches the header/footer */
+section h2 {
+    margin-bottom: 0.75rem;
+    color: #1a1a2e;
+}
+
+/* === FOOTER ===
+   Dark bar at the bottom, centred grey text */
+footer {
+    background-color: #1a1a2e;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}
