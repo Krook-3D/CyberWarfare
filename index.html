@@ -1,66 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <!-- Character encoding and responsive viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-
-    <!-- Page title shown in browser tab -->
-    <title>CyberWarfare</title>
-
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-
-=======
     <title>Etusivu - Kyberturvallisuus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
  
-    <link rel="stylesheet" href="styles.css">
->>>>>>> Stashed changes
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Header: site name/logo at the top of the page -->
-    <header>
-        <h1>CyberWarfare</h1>
-    </header>
-
-    <!-- Navigation: links to the main topic pages -->
-    <nav>
-        <ul>
-            <li><a href="#">Sabotage of Critical Infrastructure</a></li>
-            <li><a href="cyberespionage.html">Cyber Espionage</a></li>
-            <li><a href="#">Disinformation and Propaganda</a></li>
-            <li><a href="#">Financial Cybercrime</a></li>
-            <li><a href="#">Hacking</a></li>
+    <nav class="navbar">
+        <img src="white_cb-icon.png" alt="Logo" class="logo"    >
+        
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="disinformaatio.html">Disinformaatio</a></li>
+            <li><a href="taloudelliset.html">Taloudelliset hyökkäykset</a></li>
+            <li><a href="hakkerointi.html">Hakkerointi</a></li>
+            <li><a href="kriittinen.html">Kriittinen infra</a></li>
+            <li><a href="kybervakoilu.html">Kybervakoilu</a></li>
         </ul>
     </nav>
 
-    <!-- Main content area -->
-    <main>
+    <main class="container">
+        
+        <header class="hero-section">
+            
+            <h1>KYBERSODANKÄYNTI</h1>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide"><img src="kuva1.jpg" alt="Kuva 1"></div>
+                    <div class="slide"><img src="kuva2.jpg" alt="Kuva 2"></div>
+                    <div class="slide"><img src="usamilitaryguy.jpg" alt="Kuva 3"></div>
+                    <!-- KARUSELLI: Automaattisesti vaihtuu 10 sekunnin välein -->
+                    <!-- Kuvat scrollaavat vaakasuunnassa ilman pehmeää pomppaus-animaatiota -->
+                    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.carousel');
+            const slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
 
-        <!-- Section 1: Welcome with external reference link -->
-        <section>
-            <h2>Welcome</h2>
-            <p><a href="https://supo.fi/en/targets-of-espionage" target="_blank">https://supo.fi/en/targets-of-espionage</a></p>
+            // setInterval pyörittää tätä koodia toistuvasti (tässä 10000ms = 10 sekuntia)
+            setInterval(() => {
+                currentIndex++; // Siirrytään seuraavaan kuvaan
+                
+                // Jos kuvat loppuvat, palataan takaisin ensimmäiseen (indeksi 0)
+                if (currentIndex >= slides.length) {
+                    currentIndex = 0;
+                }
+                
+                // Vieritetään karuselli ilman pehmeää animaatiota (suora liike)
+                const slide = slides[currentIndex];
+                carousel.scrollLeft = slide.offsetLeft - carousel.offsetLeft;
+            }, 10000); // Voit muuttaa nopeutta tästä! (esim. 5000 = 5 sekuntia)
+        });
+    </script>
+                </div>
+                <p class="carousel-hint">Pyyhkäise tai scrollaa sivulle nähdäksesi lisää kuvia &rarr;</p>
+            </div>
+        </header>
+
+        <section class="info-section">
+            <h1>Tervetuloa sivustolle</h1>
+            <p>Tähän tulee sivuston lyhyt info- tai tervetuloateksti. Koska taustalla on kiinteä kuva, olemme laittaneet näille sisältölaatikoille hieman läpinäkyvän valkoisen taustan, jotta teksti on helposti luettavissa.</p>
         </section>
 
-        <!-- Section 2: Additional reference link -->
-        <section>
-            <h2>Another Section</h2>
-            <p><a href="https://supo.fi/en/cyber-espionage" target="_blank">https://supo.fi/en/cyber-espionage</a></p>
+        <!-- KORTIT: Jokainen kortti linkittää alasivulle. Kuva kortin yläosassa. -->
+        <section class="cards-section">
+            <!-- Kortti 1: Disinformaatio -->
+            <div class="card">
+                <img src="kuva1.jpg" alt="Kuva 1" class="card-image">
+                <h3>Disinformaatio</h3>
+                <p>Tutustu siihen, miten väärää tietoa levitetään ja miten se vaikuttaa turvallisuuteen.</p>
+                <a href="disinformaatio.html" class="btn">Lue lisää</a>
+            </div>
+            <!-- Kortti 2: Taloudelliset hyökkäykset -->
+            <div class="card">
+                <img src="kuva2.jpg" alt="Kuva 2" class="card-image">
+                <h3>Taloudelliset hyökkäykset</h3>
+                <p>Opi, miten kyberhyökkäykset aiheuttavat taloudellista vahinkoa ja miten niitä torjutaan.</p>
+                <a href="taloudelliset.html" class="btn">Lue lisää</a>
+            </div>
+            <!-- Kortti 3: Hakkerointi -->
+            <div class="card">
+                <img src="usamilitaryguy.jpg" alt="Kuva 3" class="card-image">
+                <h3>Hakkerointi</h3>
+                <p>Selaa hakkeroinnin maailmaa: eettinen testaus, haavoittuvuudet ja hyökkäystekniikat.</p>
+                <a href="hakkerointi.html" class="btn">Lue lisää</a>
+            </div>
+            <!-- Kortti 4: Kriittinen infra -->
+            <div class="card">
+                <img src="Kuva 4.png" alt="Kuva 4" class="card-image">
+                <h3>Kriittinen infra</h3>
+                <p>Katso, miksi sähköverkot, vesihuolto ja liikenne ovat tärkeä osa kyberturvallisuutta.</p>
+                <a href="kriittinen.html" class="btn">Lue lisää</a>
+            </div>
+            <!-- Kortti 5: Kybervakoilu -->
+            <div class="card">
+                <img src="vakoilupic.jpg" alt="Kuva 5" class="card-image">
+                <h3>Kybervakoilu</h3>
+                <p>Ymmärrä, miten tietoja varastetaan kyberavaruudessa ja mitä seurauksia sillä on.</p>
+                <a href="kybervakoilu.html" class="btn">Lue lisää</a>
+            </div>
         </section>
 
     </main>
 
-    <!-- Footer: copyright/info at the bottom of the page -->
     <footer>
-        <p> 2026.</p>
+        <p>&copy;WEB-HARJOITUSPROJEKTI - Toni, Juusto, Jimi, Antti Ja Olli </p>
     </footer>
 
 </body>
