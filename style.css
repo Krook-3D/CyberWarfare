@@ -1,21 +1,21 @@
 /* ============================================
    PROJEKTIN PÄÄMUUTOKSET JA SELITYKSET
    ============================================
-   
+
    1. HERO-KUVA ALASIVUILLE
       - Lisätty .hero-image-luokka alasivujen yläosaan
       - Kuva on koko levyinen (100vw) ja 350px korkea
       - object-fit: cover takaa, että kuva täyttää tilan
-   
+
    2. NAVIGOINTIPALKKI
       - position: fixed pitää navbarin näkyvissä aina (palkki ei skrollaa pois näkyvistä)
       - background-color: rgba(0, 0, 0, 0.3) antaa tummennuksen (30% musta)
       - z-index: 100 varmistaa, että navbar on muun sisällön päällä
-   
+
    3. HERO-SEKTIO (ETUSIVU)
       - width: 100vw ja height: 100vh tekevät karusellista koko näytön kokoisen
       - Karuselli vaihtaa kuvia automaattisesti 10 sekunnin välein
-   
+
    4. KORTIT (CARDS)
       - background-color: rgba(0, 0, 0, 0.5) tummentaa kortteja
       - Hover-efekti: kortit nousevat ylös ja varjo voimistuu
@@ -30,7 +30,7 @@
     height: 650px;
     overflow: hidden;
     margin-left: calc(-50vw + 50%);
-    margin-top: 76px; 
+    margin-top: 76px;
     position: relative;
     z-index: 1;
 }
@@ -45,7 +45,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', Arial, sans-serif;
-    
+
     background-image: url('tausta.jpg'); /* Sinun taustakuvasi */
     background-attachment: fixed; /* TÄMÄ pitää kuvan paikallaan scrollatessa */
     background-size: cover; /* Venyttää kuvan peittämään koko ruudun */
@@ -149,12 +149,16 @@ body {
     text-align: center;
 }
 
+.info-section {
+  color: white;
+}
+
 .info-section h1    {
-    
+
     margin-top: 0;
     color: #ffffff;
     font-size: 4rem;
-} 
+}
 
 /* Dia-karuselli */
 .carousel-container {
