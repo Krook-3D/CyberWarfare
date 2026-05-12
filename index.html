@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etusivu - Kyberturvallisuus</title>
+    <!-- DEBUG-MUUTOKSET:
+         - CSS-polku vaihdettu css/-kansioon.
+         - Logo ja kuvat haetaan photos/-kansiosta.
+         - Google Fonts -linkin &-merkki muutettu validiin &amp;-muotoon. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;display=swap" rel="stylesheet">
  
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <img src="white_cb-icon.png" alt="Logo" class="logo"    >
+        <img src="photos/white_cb-icon.png" alt="Logo" class="logo">
         
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -37,32 +41,10 @@
             
             <div class="carousel-container">
                 <div class="carousel">
-                    <div class="slide"><img src="kuva1.jpg" alt="Kuva 1"></div>
-                    <div class="slide"><img src="kuva2.jpg" alt="Kuva 2"></div>
-                    <div class="slide"><img src="usamilitaryguy.jpg" alt="Kuva 3"></div>
-                    <!-- KARUSELLI: Automaattisesti vaihtuu 10 sekunnin välein -->
-                    <!-- Kuvat scrollaavat vaakasuunnassa ilman pehmeää pomppaus-animaatiota -->
-                    <script>
-            document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.querySelector('.carousel');
-            const slides = document.querySelectorAll('.slide');
-            let currentIndex = 0;
-
-            // setInterval pyörittää tätä koodia toistuvasti (tässä 10000ms = 10 sekuntia)
-            setInterval(() => {
-                currentIndex++; // Siirrytään seuraavaan kuvaan
-                
-                // Jos kuvat loppuvat, palataan takaisin ensimmäiseen (indeksi 0)
-                if (currentIndex >= slides.length) {
-                    currentIndex = 0;
-                }
-                
-                // Vieritetään karuselli ilman pehmeää animaatiota (suora liike)
-                const slide = slides[currentIndex];
-                carousel.scrollLeft = slide.offsetLeft - carousel.offsetLeft;
-            }, 10000); // Voit muuttaa nopeutta tästä! (esim. 5000 = 5 sekuntia)
-        });
-    </script>
+                    <!-- DEBUG-MUUTOS: Kuvapolut korjattu vastaamaan photos/-kansiota. -->
+                    <div class="slide"><img src="photos/kuva1.jpg" alt="Kuva 1"></div>
+                    <div class="slide"><img src="photos/kuva2.jpg" alt="Kuva 2"></div>
+                    <div class="slide"><img src="photos/usamilitaryguy.jpg" alt="Kuva 3"></div>
                 </div>
                 <p class="carousel-hint">Pyyhkäise tai scrollaa sivulle nähdäksesi lisää kuvia &rarr;</p>
             </div>
@@ -77,35 +59,35 @@
         <section class="cards-section">
             <!-- Kortti 1: Disinformaatio -->
             <div class="card">
-                <img src="kuva1.jpg" alt="Kuva 1" class="card-image">
+                <img src="photos/kuva1.jpg" alt="Kuva 1" class="card-image">
                 <h3>Disinformaatio</h3>
                 <p>Tutustu siihen, miten väärää tietoa levitetään ja miten se vaikuttaa turvallisuuteen.</p>
                 <a href="disinformaatio.html" class="btn">Lue lisää</a>
             </div>
             <!-- Kortti 2: Taloudelliset hyökkäykset -->
             <div class="card">
-                <img src="kuva2.jpg" alt="Kuva 2" class="card-image">
+                <img src="photos/kuva2.jpg" alt="Kuva 2" class="card-image">
                 <h3>Taloudelliset hyökkäykset</h3>
                 <p>Opi, miten kyberhyökkäykset aiheuttavat taloudellista vahinkoa ja miten niitä torjutaan.</p>
                 <a href="taloudelliset.html" class="btn">Lue lisää</a>
             </div>
             <!-- Kortti 3: Hakkerointi -->
             <div class="card">
-                <img src="usamilitaryguy.jpg" alt="Kuva 3" class="card-image">
+                <img src="photos/usamilitaryguy.jpg" alt="Kuva 3" class="card-image">
                 <h3>Hakkerointi</h3>
                 <p>Selaa hakkeroinnin maailmaa: eettinen testaus, haavoittuvuudet ja hyökkäystekniikat.</p>
                 <a href="hakkerointi.html" class="btn">Lue lisää</a>
             </div>
             <!-- Kortti 4: Kriittinen infra -->
             <div class="card">
-                <img src="Kuva 4.png" alt="Kuva 4" class="card-image">
+                <img src="photos/Kuva 4.png" alt="Kuva 4" class="card-image">
                 <h3>Kriittinen infra</h3>
                 <p>Katso, miksi sähköverkot, vesihuolto ja liikenne ovat tärkeä osa kyberturvallisuutta.</p>
                 <a href="kriittinen.html" class="btn">Lue lisää</a>
             </div>
             <!-- Kortti 5: Kybervakoilu -->
             <div class="card">
-                <img src="vakoilupic.jpg" alt="Kuva 5" class="card-image">
+                <img src="photos/vakoilupic.jpg" alt="Kuva 5" class="card-image">
                 <h3>Kybervakoilu</h3>
                 <p>Ymmärrä, miten tietoja varastetaan kyberavaruudessa ja mitä seurauksia sillä on.</p>
                 <a href="kybervakoilu.html" class="btn">Lue lisää</a>
@@ -117,6 +99,26 @@
     <footer>
         <p>&copy;WEB-HARJOITUSPROJEKTI - Toni, Juusto, Jimi, Antti Ja Olli </p>
     </footer>
+
+    <script>
+        // DEBUG-MUUTOS: Karusellin skripti siirrettiin HTML-rakenteen lopuksi ja siihen lisättiin tarkistus tyhjille elementeille.
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.carousel');
+            const slides = document.querySelectorAll('.slide');
+
+            if (!carousel || slides.length === 0) {
+                return;
+            }
+
+            let currentIndex = 0;
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                const slide = slides[currentIndex];
+                carousel.scrollLeft = slide.offsetLeft - carousel.offsetLeft;
+            }, 10000);
+        });
+    </script>
 
 </body>
 </html>
