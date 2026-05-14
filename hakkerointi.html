@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkerointi - Kyberturvallisuus</title>
+    <!-- DEBUG-MUUTOKSET:
+         - CSS-polku vaihdettu css/-kansioon.
+         - Logo ja hero-kuva haetaan photos/-kansiosta.
+         - Google Fonts -linkin &-merkki muutettu validiin &amp;-muotoon. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Cyber Warfare</div>
+        <img src="photos/white_cb-icon.png" alt="Logo" class="logo">
         
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -28,7 +32,7 @@
     </nav>
 
     <div class="hero-image">
-        <img src="hackerpic.jpg" alt="Hero-kuva" />
+        <img src="photos/hackerpic.jpg" alt="Hero-kuva" />
     </div>
     <main class="container">
         
@@ -55,8 +59,6 @@
             •	Kaksivaiheinen ja hyökkäyksen jälkeinen suojaus: Suojataan hyökkäykset kahdessa eri vaiheessa. Ensin yritetään estää tai hidastaa hyökkäys, ja sitten huolehditaan siitä, että järjestelmä on vielä kunnossa hyökkäyksien jälkeen ja oppii niistä. Ensimmäisessä vaiheessa ennakoidaan suojaus eli segmentoidaan verkko, palomuurit, tunnistautumisjärjestelmät, haittaohjelmien torjunta, CVSS-arvio. Hyökkäys ei siis pääse koko järjestelmään kerralla, vaan pysäytetään osa hyökkäyksistä turvakerrosten ansiosta. Toisessa vaiheessa varsinaisten hyökkäyksien aikana reagoidaan ja rajoitetaan vaikutus tarkkailulla, ilmoituksilla, hälytyksillä ja henkilöstö on valmiudessa. Tavoitteena on, että hyökkäys havainnoitaisiin mahdollisimman pian, jotta voidaan rajoittaa altistuneet alueet ja minimoida vahingot.
             </p>
         </section>
-
-       
 
     </main>
 
