@@ -56,13 +56,13 @@ body {
     background-attachment: fixed; /* TÄMÄ pitää kuvan paikallaan scrollatessa */
     background-size: cover; /* Venyttää kuvan peittämään koko ruudun */
     background-position: center;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Navigointipalkki - MUUTETTU: position fixed, tummennus ja z-index */
 .navbar {
     background-color: rgba(0, 0, 0, 0.3); /* Tummennus 30% */
-    color: #05a7a7;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@ body {
 }
 
 .nav-links a {
-    color: #05a7a7; /* DEBUG-MUUTOS: # lisätty, jotta väriarvo toimii. */
+    color: #ffffff; /* DEBUG-MUUTOS: # lisätty, jotta väriarvo toimii. */
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -209,7 +209,7 @@ body {
 
 .carousel-hint {
     font-size: 0.8rem;
-    color: #05a7a7;
+    color: #757575;
     margin-top: 5px;
 }
 
