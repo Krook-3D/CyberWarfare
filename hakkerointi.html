@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkerointi - Kyberturvallisuus</title>
+    <!-- DEBUG-MUUTOKSET:
+         - CSS-polku vaihdettu css/-kansioon.
+         - Logo ja hero-kuva haetaan photos/-kansiosta.
+         - Google Fonts -linkin &-merkki muutettu validiin &amp;-muotoon. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Cyber Warfare</div>
+        <img src="photos/white_cb-icon.png" alt="Logo" class="logo">
         
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -28,7 +32,7 @@
     </nav>
 
     <div class="hero-image">
-        <img src="hackerpic.jpg" alt="Hero-kuva" />
+        <img src="photos/hackerpic.jpg" alt="Hero-kuva" />
     </div>
     <main class="container">
         
@@ -36,8 +40,6 @@
             <h1>Hakkerointi</h1>
             <p>Hakkerointi on laaja käsite, joka kattaa sekä hyökkäävien että puolustavien toimijoiden toimet tietojärjestelmien parissa. Eettisessä hakkeroinnissa tutkitaan järjestelmien heikkoja kohtia luvallisesti ja tavoitteena on löytää haavoittuvuuksia ennen kuin ne pääsevät hyökkääjien käsiin. Tämä sisältää muun muassa verkkojen skannauksen, ohjelmistojen arvioinnin, salasanojen murtamisen ja tietomurtojen ehkäisyn. Hyvä hakkeri ymmärtää sekä tekniset toteutustavat että niiden vaikutukset organisaation toimintaan ja tietosuojaan. Kyberturvallisuudessa tietämys hakkeroinnin menetelmistä auttaa rakentamaan vahvempia puolustuksia, kouluttamaan henkilöstöä ja reagoimaan nopeasti uhkiin.</p>
         </section>
-
-       
 
     </main>
 
