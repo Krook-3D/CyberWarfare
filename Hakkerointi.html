@@ -33,8 +33,27 @@
     <main class="container">
         
         <section class="info-section">
-            <h1>Hakkerointi</h1>
-            <p>Hakkerointi on laaja käsite, joka kattaa sekä hyökkäävien että puolustavien toimijoiden toimet tietojärjestelmien parissa. Eettisessä hakkeroinnissa tutkitaan järjestelmien heikkoja kohtia luvallisesti ja tavoitteena on löytää haavoittuvuuksia ennen kuin ne pääsevät hyökkääjien käsiin. Tämä sisältää muun muassa verkkojen skannauksen, ohjelmistojen arvioinnin, salasanojen murtamisen ja tietomurtojen ehkäisyn. Hyvä hakkeri ymmärtää sekä tekniset toteutustavat että niiden vaikutukset organisaation toimintaan ja tietosuojaan. Kyberturvallisuudessa tietämys hakkeroinnin menetelmistä auttaa rakentamaan vahvempia puolustuksia, kouluttamaan henkilöstöä ja reagoimaan nopeasti uhkiin.</p>
+            <h1>Sotilaallisten järjestelmien hakkerointi</h1>
+            <p>Sotilaallisten järjestelmien hakkerointi viittaa kyberhyökkäyksiin ja luvattomiin tunkeutumisiin,
+            jotka kohdistuvat asevoimien käyttämiin tietojärjestelmiin, verkkoihin, laitteisiin ja infrastruktuuriin.
+            Aihe on keskeinen osa nykyaikaista sodankäyntiä ja kansallista turvallisuutta, mutta sitä voidaan käsitellä vastuullisesti vain yleisellä ja kuvailevalla tasolla.
+            Kyseessä on yksi kyberturvallisuuden vaativimmista ja monimutkaisimmista osa-alueista. Se ei rajoitu pelkkään tekniseen osaamiseen, vaan liittyy laajempaan
+            kyber- ja informaatiosodankäyntiin, jossa panoksina ovat valtion turvallisuus ja ihmishenget.
+            Sotilaallisten järjestelmien hakkeroinnin tavoitteet voivat vaihdella tiedustelusta ja vakoilusta järjestelmien häirintään, sabotaasiin ja palveluiden lamauttamiseen.</p>
+
+            <h1>Nykyaikaiset uhat ja torjunta tavat</h1>
+            <h2>Uhkat</h2>
+            <p>
+            •	Sisäinen uhka: henkilö, jolla laillinen pääsy järjestelmään tai verkko arkkitehtuuriin, mutta käyttää sitä tahallisesti tai vahingossa hyökkääjän hyväksi. Tällaisia rooleja voivat olla ohjelmoijat, järjestelmien ylläpitäjät, alihankkijat tai jopa sotilashenkilöstö, joka suorittaa järjestelmien käyttöä, päivityksiä tai huoltotoimenpiteitä. 
+            •	Hybridi-hyökkäykset: Hybridi hyökkäyksissä elektronisten ja kyberhyökkäysten yhdistäminen tekee hyökkäyksistä monikanavaisempia, vaikeammin tunnistettavia ja enemmän häiritseviä. Ne eivät vain katkaise yhtä osaa järjestelmästä, vaan pyrkivät vaikuttamaan vastustajan kokonaistoimintaan. Elektronisella hyökkäyksellä voi katkaista tai vääristää viesti  ja paikannusjärjestelmät esimerkiksi GPS signaalit ja radio  yhteydet, jolloin vastustaja ei näe oikein tilannetta, eikä pääse hyvin käyttämään joukkojaan. Kyberhyökkäyksellä voi puolestaan vaurioittaa tai lamaannuttaa tietojärjestelmiä, komentosovelluksia, tietokantoja ja verkkoinfraa, jolloin järjestelmä ei pysty enää käsittelemään oikeaa tietoa tai oikeita käskyjä. Kun nämä kaksi yhdistyvät, syntyy hybridivaikutus. Vastustajan johtaminen saattaa menettää sekä tieto  että viesti kanavat samanaikaisesti, jolloin päätöksenteko hidastuu ja toiminta lamautuu. Hyökkääjä voi käyttää hyväkseen sekä sähkömagneettista spektriä että tietoverkkoja, jolloin hänen on helpompi käyttää hyväkseen vastustajan haavoittuvuuksia ja katkaista yhteiskunnan kriittiset toiminnot kuten energia, liikenne ja viestintä.
+            •	Piilokoodit: Piilokoodi on ohjelmakoodin piilotettu osa, joka näyttää ulkoisesti normaalilta, mutta sisältää salaisen toiminnallisuuden. Piilokoodi voi jäädä järjestelmään pitkäksi aikaa ja käynnistyä tietyillä ehdolla, jolloin järjestelmä käyttäytyy virheellisesti tai hyökkääjä saa pääsyn järjestelmään. Tarkoituksena on esimerkiksi tietojen sieppaaminen, ”takaoven” kautta järjestelmään tai verkkovuodon aikaansaamiseen. Piilokoodia esiintyy ohjelmistoissa, järjestelmissä, fyysisissä laitteessa ja verkkokomponenteissa.
+            •	Tekoälyn ja koneoppimisen manipulointi: Tekoälyjärjestelmiä voidaan myrkyttää väärällä koulutusdatalla, jolloin tunnistusjärjestelmät (esim. kuvanluokittelu) voivat väärin käsitellä kohdetta esimerkiksi tankki voidaan luokitella autoksi tai taistelukohde jätetään havaitsematta.</p>
+
+            <h2>Torjunta tavat</h2>
+            <p>
+            •	Jatkuvat ja realistiset kyberharjoitukset: Sotajohdon ja taisteluosastojen tasolla suoritetaan jatkuvasti kyberharjoituksia, että tunnistetaan riskikohdat (esim. reitittimet ja tiedostopalvelimet), jotta torjuntastrategia on realistinen ja ajan tasalla. CVSS (Common Vulnerability Scoring System) on yleisesti hyväksytty peruste, jolla arvioidaan jokaisen tietoturvahaavoittuvuuden vakavuutta numerollisesti (0–10), jolloin helpommin nähdään, mitkä ovat korkean riskin kohteita.
+            •	Kaksivaiheinen ja hyökkäyksen jälkeinen suojaus: Suojataan hyökkäykset kahdessa eri vaiheessa. Ensin yritetään estää tai hidastaa hyökkäys, ja sitten huolehditaan siitä, että järjestelmä on vielä kunnossa hyökkäyksien jälkeen ja oppii niistä. Ensimmäisessä vaiheessa ennakoidaan suojaus eli segmentoidaan verkko, palomuurit, tunnistautumisjärjestelmät, haittaohjelmien torjunta, CVSS-arvio. Hyökkäys ei siis pääse koko järjestelmään kerralla, vaan pysäytetään osa hyökkäyksistä turvakerrosten ansiosta. Toisessa vaiheessa varsinaisten hyökkäyksien aikana reagoidaan ja rajoitetaan vaikutus tarkkailulla, ilmoituksilla, hälytyksillä ja henkilöstö on valmiudessa. Tavoitteena on, että hyökkäys havainnoitaisiin mahdollisimman pian, jotta voidaan rajoittaa altistuneet alueet ja minimoida vahingot.
+            </p>
         </section>
 
        
