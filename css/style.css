@@ -173,6 +173,10 @@ body {
   color: red;
 }
 
+.info-section img {
+  max-width: 96%;
+}
+
 /* Dia-karuselli */
 .carousel-container {
     width: 100%;
