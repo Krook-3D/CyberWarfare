@@ -1,5 +1,5 @@
 # CyberWarfare
-School project
+School group project
 
 ### Project management  blog (in Finnish)
 https://kybersota.wordpress.com/
