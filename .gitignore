@@ -1,5 +1,5 @@
 # Nämä eivät mene versionhallintaan
-.vscode/
+.vscode
 
 # dotenv environment variable files
 .env
@@ -7,3 +7,7 @@
 .env.test.local
 .env.production.local
 .env.local
+
+# asetustiedostoja
+.editorconfig
+.prettierrc.cjs
