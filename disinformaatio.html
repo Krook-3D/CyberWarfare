@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disinformaatio - Kyberturvallisuus</title>
+    <!-- DEBUG-MUUTOKSET:
+         - CSS-polku vaihdettu css/-kansioon.
+         - Logo ja hero-kuva haetaan photos/-kansiosta.
+         - Google Fonts -linkin &-merkki muutettu validiin &amp;-muotoon. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  
-   
-
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Cyber Warfare</div>
+        <img src="photos/white_cb-icon.png" alt="Logo" class="logo">
         
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -31,14 +33,27 @@
     </nav>
 
     <div class="hero-image">
-        <img src="usamilitaryguy.jpg" alt="Hero-kuva" />
+        <img src="photos/usamilitaryguy.jpg" alt="Hero-kuva" />
     </div>
     <main class="container">
         
         <!-- SISÄLTÖOSIO: Pääotsikko ja pitkä kuvaus aiheesta -->
         <section class="info-section">
-            <h1>Disinformaatio</h1>
-            <p>Disinformaatiolla tarkoitetaan tarkoituksellisesti levitettävää väärää tai harhaanjohtavaa informaatiota. Kyberturvaan liittyvässä disinformaatiossa hyökkääjät voivat levittää väärää tietoa, jotta heikentäisivät luottamusta instituutioihin tai johdattaisivat väestöä harhaan.</p>
+            <h2>Disinformaatio ja informaatiosota Nykypäivän näkymätön taistelukenttä</h2>
+            <p>Nykypäivän digitaalisessa maailmassa tieto on valtaa, mutta se voi olla myös ase. 
+                Elämme aikaa, jolloin uutiset, mielipiteet ja väitteet leviävät sosiaalisessa mediassa sekunneissa. 
+                Tässä ympäristössä disinformaatio ja informaatiosodankäynti ovat todellisia ilmiöitä, jotka pyrkivät muokkaamaan mielipiteitä, luomaan epäsopua ja heikentämään luottamusta yhteiskuntaan.
+
+                Tämä sivu auttaa sinua ymmärtämään informaatiovaikuttamisen peruskäsitteet ja antaa työkaluja haitalliselta vaikuttamiselta suojautumiseen.</p>
+
+                <h3>Käsitteet haltuun: Misinformaatio vai disinformaatio?</h3>
+                <p>Väärä tieto jaetaan usein kolmeen eri luokkaan sen perusteella, onko taustalla tahallinen pyrkimys aiheuttaa vahinkoa.
+
+                <p>Misinformaatio: Väärää tai epätarkkaa tietoa, jota jaetaan vahingossa, ilman pahaa tarkoitusta. Kyseessä voi olla esimerkiksi aito väärinkäsitys, huolimattomuus tai vanhentuneen tiedon jakaminen eteenpäin.</p>
+
+<p>Disinformaatio: Tahallaan luotua ja levitettyä valheellista tietoa. Sen tarkoituksena on johtaa harhaan, aiheuttaa vahinkoa, kääntää huomio pois tärkeistä aiheista tai hyödyttää levittäjäänsä poliittisesti tai taloudellisesti.</p>
+
+<p>Malinformaatio: Sinänsä todenperäistä tietoa, jota levitetään tarkoituksena vahingoittaa henkilöä, organisaatiota tai valtiota. Esimerkkejä tästä ovat yksityisluontoisten viestien, kuvien tai liikesalaisuuksien tahallinen vuotaminen julkisuuteen.</p>
         </section>
 
     </main>

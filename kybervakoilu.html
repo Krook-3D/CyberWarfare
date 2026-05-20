@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kybervakoilu - Kyberturvallisuus</title>
+    <!-- DEBUG-MUUTOKSET:
+         - CSS-polku vaihdettu css/-kansioon.
+         - Logo ja hero-kuva haetaan photos/-kansiosta.
+         - Google Fonts -linkin &-merkki muutettu validiin &amp;-muotoon. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Cyber Warfare</div>
+        <img src="photos/white_cb-icon.png" alt="Logo" class="logo">
         
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -28,14 +33,71 @@
     </nav>
 
     <div class="hero-image">
-        <img src="vakoilupic.jpg" alt="Hero-kuva" />
+        <img src="photos/vakoilupic.jpg" alt="Hero-kuva" />
     </div>
     <main class="container">
         
         <!-- SISÄLTÖOSIO: Pääotsikko ja pitkä kuvaus aiheesta -->
         <section class="info-section">
             <h1>Kybervakoilu</h1>
-            <p>Kybervakoilu tarkoittaa tiedon keräämistä kybervälineiden avulla. Valtiot ja kriminelliset ryhmittymät käyttävät kybervakoilua arkaluontoisten tietojen varastamiseen.</p>
+            <p>Kybervakoilu on digitaalisten järjestelmien, verkkojen tai laitteiden luvatonta tarkkailua ja tietojen varastamista, jota harjoittavat usein valtiolliset toimijat, hakkeriryhmät tai kilpailevat yritykset. Sen tavoitteena on hankkia luottamuksellista tietoa, kuten liikesalaisuuksia tai valtionhallinnon salaista tietoa.</p>
+        <br>
+        <p>Tavoitteet: Yleensä kybervakoilun kohteena on poliittinen, taloudellinen tai sotilaallinen tieto.</p>
+        <ul>
+          <li><a href="#toimijat">Toimijat</a>: Suojelupoliisin mukaan erityisesti Venäjä ja Kiina muodostavat merkittävän valtiollisen kybervakoilu-uhan Suomelle.</li>
+          <li><a href="#menetelmat">Menetelmät</a>: Tyypillisesti käytetään kehittyneitä ja pitkäkestoisia, niin kutsuttuja APT-operaatioita (Advanced Persistent Threat), joissa pyritään pysymään järjestelmässä huomaamatta mahdollisimman pitkään.</li>
+          <li><a href="#kohteet">Kohteet</a>: Vakoilun kohteena voi olla kriittinen infrastruktuuri (esim. energiantuotanto, vesihuolto) tai yritysten immateriaalioikeudet.</li>
+          <li>Ero rikollisuuteen: Toisin kuin taloudelliseen hyötyyn pyrkivä peruskyberrikollisuus, kybervakoilu on usein strategista ja pitkäjänteistä toimintaa, jolla pyritään horjuttamaan toisen valtion tai yrityksen asemaa.</li>
+        </ul>
+        <br>
+        <p>Kybervakoilun kohteeksi joutuminen voi olla vaikea havaita, ja sen torjunta vaatii vahvaa kyberturvallisuusosaamista.</p>
+        <br>
+        <h2 id="toimijat">Toimijat</h2>
+        <h3>Keskeiset toimijat ja uhkatasot</h3>
+        <ul>
+           <li>Venäjä: Venäjän henkilötiedustelu on vaikeutunut länsimaissa, mikä on lisännyt kybervakoilun merkitystä Venäjän tiedustelutoiminnassa. Venäjä käyttää kybervakoilua tietojen hankkimiseen tietojärjestelmistä ja internetistä.</li>
+           <li>Kiina: Kiina on tunnistettu yhdeksi aktiivisimmista Suomeen kohdistuvan valtiollisen vakoilun harjoittajista.</li>
+           <li>APT-ryhmät (Advanced Persistent Threat): Nämä ovat korkeatasoisia, pitkäkestoisia ja usein valtioiden tiedustelupalveluiden ohjaamia hyökkääjäryhmiä. Ne eivät ole pelkkiä hakkeriryhmiä, vaan osa suunnitelmallista vakoilua.</li>
+           <li>Alihankkijat ja yhteistyökumppanit: Vakoilu kohdistuu usein ensisijaista kohdetta heikommin suojattuihin tahoihin, kuten alihankkijoihin, joiden kautta pyritään pääsemään käsiksi lopulliseen kohteeseen.</li>
+        </ul>
+        <h3>Kybervakoilun kohteet</h3>
+        <h3>Kybervakoilun kohteena Suomessa ovat erityisesti:</h3>
+        <ul>
+           <li>Valtionhallinto ja poliittinen päätöksenteko.</li>
+           <li>Huoltovarmuuskriittiset toimijat (esim. energia-ala, infrastruktuuri).</li>
+           <li>Korkean teknologian yritykset ja tutkimuslaitokset.</li>
+           <li>Yksittäiset henkilöt, jotka käsittelevät luottamuksellista tietoa.</li>
+        </ul>
+        <h3>Vakoilun tavoitteet</h3>
+        <ul>
+           <li>Taloudellinen hyöty: Liikesalaisuuksien, patenttien ja tutkimustiedon varastaminen.</li>
+           <li>Poliittinen ja sotilaallinen tiedustelu: Suomen NATO-jäsenyyden myötä kybervakoilun ja -sabotaasin riskit ovat korostuneet.</li>
+           <li>Vaikuttaminen: Päätöksenteon ohjailu tai häirintä. </li>
+        </ul>
+        <p>Suojelupoliisi ja Liikenne- ja viestintävirasto Traficomin Kyberturvallisuuskeskus seuraavat tilannetta ja tukevat organisaatioita vakoilun torjunnassa.</p>
+        <br>
+        <h2 id="menetelmat">Menetelmät</h2>
+        <h3>Yleisimmät kybervakoilumenetelmät:</h3>
+        <ul>
+           <li>Kalastelu (Phishing) ja keihäskalastelu: Haitalliset sähköpostiviestit, jotka on kohdennettu tiettyyn henkilöön luottamuksellisten tunnusten tai tietojen urkkimiseksi.</li>
+           <li>Haittaohjelmat ja vakoiluohjelmat: Järjestelmään asennettavat ohjelmat, jotka tallentavat näppäinpainalluksia, ottavat kuvakaappauksia tai varastavat tiedostoja.</li>
+           <li>Ohjelmistohaavoittuvuuksien hyödyntäminen: Hyökkääjät etsivät ja käyttävät hyväkseen tietojärjestelmien, ohjelmistojen tai laitteiden suojaamattomia aukkoja.</li>
+           <li>Sosiaalinen manipulointi: Ihmisten huijaaminen luovuttamaan tietoja tai pääsyjärjestelmiin, esimerkiksi esiintymällä luotettavana tahona.</li>
+           <li>Toimitusketjuhyökkäykset: Kohteen lähellä olevien kumppaneiden, alihankkijoiden tai palveluntarjoajien tietojärjestelmien kautta tunkeutuminen, koska näiden suojaukset voivat olla heikompia.</li>
+           <li>Tunnusten varastaminen: Varastettujen käyttäjätunnusten ja salasanojen käyttö järjestelmiin tunkeutumiseen (esim. suojelupoliisi kertoo tämän olevan yleistä).</li>
+         </ul>
+         <br>
+         <h2 id="kohteet">Kohteet</h2>
+         <h3>Keskeisimmät kybervakoilun kohteet Suomessa:</h3>
+         <ul>
+            <li>Valtionhallinto ja päätöksenteko: Ulko-, turvallisuus- ja sisäpoliittinen tieto on korkean profiilin vakoilukohde.</li>
+            <li>Kriittinen infrastruktuuri: Energiahuolto, liikenne, terveydenhuolto ja tietoliikenneverkot ovat houkuttelevia kohteita, joiden häirinnällä voidaan horjuttaa yhteiskunnan toimintaa.</li>
+            <li>Korkean teknologian yritykset ja teollisuus: Suomalaiset huipputeknologiayritykset, puolustusteollisuus sekä tutkimus- ja kehitystoiminta (T&K) ovat usein vakoilun kohteena.</li>
+            <li>Startup-yritykset: Suojelupoliisi on havainnut, että suomalaisiin startup-yrityksiin on kohdistunut useita onnistuneita kybervakoiluoperaatioita.</li>
+            <li>-Alihankintaketjut: Vakoilua kohdistetaan usein ensisijaista kohdetta lähellä oleviin toimijoihin, kuten alihankkijoihin ja palveluntarjoajiin, joilla on pääsy laajempaan verkkoon.</li>
+            <li>Yksittäiset henkilöt: Merkittävissä tehtävissä työskentelevät henkilöt, jotka käsittelevät luottamuksellista tietoa, ovat potentiaalisia kohteita.</li>
+          </ul>
+
         </section>
 
     </main>

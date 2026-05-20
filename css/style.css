@@ -21,7 +21,13 @@
       - Hover-efekti: kortit nousevat ylös ja varjo voimistuu
       - .card-image-luokka asettaa kuvan 150px korkeaksi
 
-/* ============================================ */
+   DEBUG-MUUTOKSET
+      - Alun kommentti suljettu oikein, jotta CSS-säännöt eivät jää kommentin sisään.
+      - Taustakuvan polku korjattu suhteessa css/-kansioon: ../photos/tausta.jpg.
+      - Navilinkkien väriarvo korjattu muotoon #05a7a7.
+      - Otsikoille lisätty rivittymisen suoja pitkiä tekstejä varten.
+      - Mobiilinäkymän hero-korkeuksia ja valikon sijaintia korjattu.
+   ============================================ */
 
 /* Hero-kuva alasivuille */
 .hero-image {
@@ -46,17 +52,17 @@ body {
     padding: 0;
     font-family: 'Orbitron', Arial, sans-serif;
 
-    background-image: url('tausta.jpg'); /* Sinun taustakuvasi */
+    background-image: url('../photos/tausta.jpg'); /* DEBUG-MUUTOS: polku lähtee css/-kansiosta photos/-kansioon. */
     background-attachment: fixed; /* TÄMÄ pitää kuvan paikallaan scrollatessa */
     background-size: cover; /* Venyttää kuvan peittämään koko ruudun */
     background-position: center;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Navigointipalkki - MUUTETTU: position fixed, tummennus ja z-index */
 .navbar {
     background-color: rgba(0, 0, 0, 0.3); /* Tummennus 30% */
-    color: #05a7a7;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +90,7 @@ body {
 }
 
 .nav-links a {
-    color: 05a7a7;
+    color: #ffffff; /* DEBUG-MUUTOS: # lisätty, jotta väriarvo toimii. */
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -137,10 +143,12 @@ body {
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     font-size: 6rem;
+    max-width: 95%;
+    overflow-wrap: break-word; /* DEBUG-MUUTOS: pitkä otsikko ei valu ulos pienellä näytöllä. */
 }
 
 .info-section, .cards-section, footer {
-    font-family: 'Orbitron', Arial, sans-serif;
+    font-family: 'Exo 2', Arial, sans-serif;
     background-color: transparent;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -158,6 +166,11 @@ body {
     margin-top: 0;
     color: #ffffff;
     font-size: 4rem;
+    overflow-wrap: break-word; /* DEBUG-MUUTOS: alasivujen pitkät otsikot rivittyvät hallitusti. */
+}
+
+.info-section ul li a {
+  color: red;
 }
 
 /* Dia-karuselli */
@@ -204,7 +217,7 @@ body {
 
 .carousel-hint {
     font-size: 0.8rem;
-    color: #05a7a7;
+    color: #757575;
     margin-top: 5px;
 }
 
@@ -287,7 +300,7 @@ body {
         display: none; /* Piilotetaan linkit oletuksena */
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Palkin korkeuden alapuolelle */
+        top: 82px; /* DEBUG-MUUTOS: mobiilivalikko alkaa kiinteän navbarin alapuolelta. */
         left: 0;
         width: 100%;
         background-color: #2c3e50;
@@ -302,5 +315,24 @@ body {
     /* Kun checkbox on valittu (klikattu hampurilaista), näytetään valikko */
     #menu-toggle:checked ~ .nav-links {
         display: flex;
+    }
+
+    .hero-image {
+        height: 360px;
+        margin-top: 82px;
+    }
+
+    .hero-section {
+        height: 70vh;
+        margin-top: 2.7rem;
+    }
+
+    .hero-section h1 {
+        top: 90px;
+        font-size: 2.5rem;
+    }
+
+    .info-section h1 {
+        font-size: 2.2rem;
     }
 }
