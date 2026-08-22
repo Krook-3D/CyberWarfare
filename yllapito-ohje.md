@@ -1,6 +1,6 @@
 # Kybersodankäynti, ylläpito-ohje
 
-Ryhmätyöprojekti, web17, ryhmä 1, Antti, Juuso, Jimi, Ton ja Olli
+Ryhmätyöprojekti, web17, ryhmä 1, Antti, Juuso, Jimi, Toni ja Olli
 
 
 
