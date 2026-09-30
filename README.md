@@ -1,8 +1,12 @@
 # CyberWarfare
 School group project
 
+
+
 ### Project management  blog (in Finnish)
 https://kybersota.wordpress.com/
+
+
 
 
 ### Live site published with Github Pages
